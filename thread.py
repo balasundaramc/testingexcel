@@ -13,6 +13,9 @@ def worker(e):
         else:
             print "bar"
             break
+			
+			
+#ihave added the new comments			
 
 e = threading.Event()
 t = threading.Thread(target=worker, args=(e,))
@@ -28,3 +31,5 @@ e.set()
 # Now join without a timeout knowing that the thread is either already 
 # finished or will finish "soon."
 t.join()
+
+
